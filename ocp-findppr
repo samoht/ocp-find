@@ -4,7 +4,7 @@ set -e
 CONFIG=$1
 shift
 PACKAGES=$@
-PP=`ocamlfind query -r ${PACKAGES} -predicates preprocessor,syntax -format "    \"-I\" \"%d\" \"%a\""`
+PP=`ocamlfind query -r ${PACKAGES} -predicates preprocessor,syntax,camlp4r -format "    \"-I\" \"%d\" \"%a\""`
 
 echo "begin config \"${CONFIG}\"
   pp  = [ \"camlp4\"
