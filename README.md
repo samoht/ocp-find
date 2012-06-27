@@ -39,6 +39,6 @@ the preprocessor to compile the library.
 
 ### ocp-findppo, ocp-findppr
 
-Same behavior as ocp-findpp, we it uses `camlp4o` (or `camlp4r`)
-instead of `camlp4` as base pre-processor.
+Same behavior as ocp-findpp, but it uses `camlp4o` (or `camlp4r`)
+instead of `camlp4` as pre-processor.
 
