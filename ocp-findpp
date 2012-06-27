@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+CAMLP4=$1
+CONFIG=$2
+shift
+shift
+PACKAGES=$@
+PP=`ocamlfind query -r ${PACKAGES} -predicates preprocessor,syntax,${CAMLP4} -format "    \"-I\" \"%d\" \"%a\""`
+
+echo "begin config \"${CONFIG}\"
+  pp  = [
+${PP}  ]
+end
+"
