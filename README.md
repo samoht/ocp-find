@@ -15,7 +15,7 @@ The script takes only 1 paramater, which should be exactly the name of
 the ocamlfind package.
 
 To use `lwt.ocp`, just include the file in your project and scan the
-working directory of your project with `ocp-build -scan. You can then
+working directory of your project with `ocp-build -scan`. You can then
 use `"lwt"` in the `requires` field of any `.ocp` files in your project.
 
 ### ocp-findpp
@@ -39,6 +39,6 @@ the preprocessor to compile the library.
 
 ### ocp-findppo, ocp-findppr
 
-Same behavior as ocp-findpp, we it uses `camlp4o` (or `camlp4r)
+Same behavior as ocp-findpp, we it uses `camlp4o` (or `camlp4r`)
 instead of `camlp4` as base pre-processor.
 
