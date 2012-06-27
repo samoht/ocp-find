@@ -3,8 +3,7 @@ ocp-find
 
 Bridge between ocp-build and ocamlfind
 
-ocp-findlib
------------
+### ocp-findlib
 
     ocp-finlib lwt > lwt.ocp
 
@@ -19,8 +18,7 @@ To use `lwt.ocp`, just include the file in your project and scan the
 working directory of your project with `ocp-build -scan. You can then
 use `"lwt"` in the `requires` field of any `.ocp` files in your project.
 
-ocp-findpp
-----------
+### ocp-findpp
 
     ocp-findpp my_pp lwt.syntax cow.syntax > pp.ocp
 
@@ -39,5 +37,8 @@ working directory of your project using `ocp-build -scan`. You can
 then write `use "my_pp"` in the scope of one of your libraries to use
 the preprocessor to compile the library.
 
-ocp-findppo
------------
+### ocp-findppo, ocp-findppr
+
+Same behavior as ocp-findpp, we it uses `camlp4o` (or `camlp4r)
+instead of `camlp4` as base pre-processor.
+
